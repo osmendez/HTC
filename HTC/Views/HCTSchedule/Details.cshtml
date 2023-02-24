@@ -1,0 +1,540 @@
+﻿@model HTC.Models.HCTOrders
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>HCTOrders</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Schedule)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Schedule)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RevisedDate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RevisedDate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Reason)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Reason)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MRN)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MRN)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Active)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Active)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DateOfBirth)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DateOfBirth)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Heightcm)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Heightcm)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Weightkg)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Weightkg)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HeightandWeightComment)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HeightandWeightComment)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ADJBWType)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ADJBWType)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Regimen)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Regimen)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IRBNumber)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IRBNumber)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.StartDate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.StartDate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TransplantPhysician)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TransplantPhysician)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NurseCoordinator)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NurseCoordinator)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MUDNurseCoordinator)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MUDNurseCoordinator)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CMV)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CMV)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NMDP)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NMDP)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ABO)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ABO)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HLA_A_1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HLA_A_1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HLA_A_2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HLA_A_2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HLA_B_1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HLA_B_1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HLA_B_2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HLA_B_2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HLA_C_1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HLA_C_1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HLA_C_2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HLA_C_2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HLA_DRB1_1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HLA_DRB1_1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HLA_DRB1_2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HLA_DRB1_2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HLA_DQB1_1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HLA_DQB1_1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HLA_DQB1_2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HLA_DQB1_2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HLA_DPB1_1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HLA_DPB1_1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HLA_DPB1_2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HLA_DPB1_2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DiagnosisAcuteLymphocyticLeukemia)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DiagnosisAcuteLymphocyticLeukemia)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DiagnosisAcuteMyelogenousLeukemia)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DiagnosisAcuteMyelogenousLeukemia)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DiagnosisChronicLymphocyticLeukemia)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DiagnosisChronicLymphocyticLeukemia)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DiagnosisChronicMyelogenousLeukemia)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DiagnosisChronicMyelogenousLeukemia)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DiagnosisGermCell)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DiagnosisGermCell)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DiagnosisHodgkinDisease)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DiagnosisHodgkinDisease)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DiagnosisMyelodysplasticSyndrome)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DiagnosisMyelodysplasticSyndrome)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DiagnosisMultipleMyeloma)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DiagnosisMultipleMyeloma)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DiagnosisNon_HodgkinLymphoma)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DiagnosisNon_HodgkinLymphoma)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DiagnosisOther)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DiagnosisOther)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ReferringMD)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ReferringMD)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DonorType)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DonorType)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DonorMRN_NMDP_URDCordNum)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DonorMRN_NMDP_URDCordNum)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DonorCORDAKANum)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DonorCORDAKANum)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DonorName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DonorName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DonorABO)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DonorABO)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DonorCMV)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DonorCMV)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DonorDateOfBirth)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DonorDateOfBirth)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DonorGender)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DonorGender)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DonorTNC)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DonorTNC)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DonorHLA_A_1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DonorHLA_A_1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DonorHLA_A_2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DonorHLA_A_2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DonorHLA_B_1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DonorHLA_B_1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DonorHLA_B_2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DonorHLA_B_2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DonorHLA_C_1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DonorHLA_C_1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DonorHLA_C_2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DonorHLA_C_2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DonorHLA_DRB1_1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DonorHLA_DRB1_1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DonorHLA_DRB1_2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DonorHLA_DRB1_2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DonorHLA_DQB1_1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DonorHLA_DQB1_1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DonorHLA_DQB1_2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DonorHLA_DQB1_2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DonorHLA_DPB1_1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DonorHLA_DPB1_1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DonorHLA_DPB1_2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DonorHLA_DPB1_2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Donor2URDCordNumber)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Donor2URDCordNumber)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Donor2CORDAKANumber)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Donor2CORDAKANumber)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Donor2ABO)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Donor2ABO)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Donor2CMV)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Donor2CMV)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Donor2DateOfBirth)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Donor2DateOfBirth)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Donor2Gender)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Donor2Gender)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Donor2TNC)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Donor2TNC)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Donor2HLA_A_1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Donor2HLA_A_1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Donor2HLA_A_2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Donor2HLA_A_2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Donor2HLA_B_1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Donor2HLA_B_1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Donor2HLA_B_2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Donor2HLA_B_2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Donor2HLA_C_1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Donor2HLA_C_1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Donor2HLA_C_2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Donor2HLA_C_2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Donor2HLA_DRB1_1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Donor2HLA_DRB1_1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Donor2HLA_DRB1_2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Donor2HLA_DRB1_2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Donor2HLA_DQB1_1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Donor2HLA_DQB1_1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Donor2HLA_DQB1_2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Donor2HLA_DQB1_2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Donor2HLA_DPB1_1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Donor2HLA_DPB1_1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Donor2HLA_DPB1_2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Donor2HLA_DPB1_2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Comments)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Comments)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AssignedTo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AssignedTo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.StartYear)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.StartYear)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>
